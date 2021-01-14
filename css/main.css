@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Mali");
+/* GENERAL STYLES */
+:root {
+  --mainYellow: #fdbe02;
+  --mainWhite: #fff;
+  --mainBlack: #071013;
+  --mainGrey: #9b9999;
+  --TransGrey: rgba(0, 0, 0, 0.1);
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Mali", cursive;
+}
+.text-slanted {
+  font-family: "Calligraffitti", cursive;
+}
+.old-price{
+  text-decoration: line-through;
+}
+/* yellow */
+.mainyellow{
+color: #fdbe02;
+}
+.mainyellowback{
+  background-color:#fdbe02 ;
+}
+/* white */
+.mainwhite{
+  color: white;
+}
+.mainwhiteback{
+  background-color: white;
+}
+/* black */
+.mainblack{
+  color: #071013;
+}
+.mainblackback{
+  background-color: #071013;
+}
+/* grey */
+.maingrey{
+  color:#9b9999;
+}
+.maingreyback{
+  background-color: #9b9999;
+}
+/* trans grey */
+.transgrey{
+color: rgba(0, 0, 0, 0.1);
+}
+/* somewhite */
+.somewhite{
+  background-color: #e9ecef;
+}
+.transgreyback{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.color-blue{
+  background-color: blue;
+}
+.color-red{
+  background-color: red;
+}
+.color-green{
+  background-color: green;
+}
+.color-yellow{
+  background-color: yellow;
+}
+.color-black{
+  background-color: black;
+}
+/* 16 */
+.sixten{
+  font-size: 16px;
+}
+/* 32 */
+.threetwo{
+  font-size: 32px;
+}
+/* 25.6 */
+.twofivesix{
+font-size: 1.6rem;
+}
+.twozero{
+  font-size: 20px;
+}
+/* my btn */
+.my{
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: .375rem .75rem;
+  color: var(--mainBlack);
+  background-color: var(--mainYellow);
+  transition: .3s;
+  text-decoration: none;
+  
+  font-weight: 400;
+}
+.my:hover{
+  color: var(--mainYellow);
+  background-color: var(--mainBlack);
+  text-decoration: none;
+}
+.mi{
+  display: inline-block;
+  font-size: 1rem;
+  padding: .375rem .75rem;
+  color: var(--mainBlack);
+  background-color: var(--mainYellow);
+  transition: .3s;
+  text-decoration: none;
+ 
+}
+.mi:hover{
+  color: var(--mainYellow);
+  background-color: var(--mainBlack);
+  text-decoration: none;
+}
+/* cat section left part links hover effect */
+.mj:hover{
+color: var(--mainGrey);
+text-decoration: none;
+}
+/*  end cat section left part links hover effect */
+/* bar */
+.bar{
+  width: 50px;
+  height: 3px;
+  background-color: var(--mainYellow);
+}
+/*  end bar */
+/* nav */
+.spec{
+  border-bottom: 0.1rem solid var(--mainYellow);
+}
+/* head */
+.head{
+  background:url("../img/pageBcg/bannerBcg.jpeg") center/cover fixed no-repeat;
+}
+/* product */
+.product .item-img .img-container{
+  position: relative;
+}
+.product .item-img .img-container a{
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  text-decoration: none;
+  opacity: 0;
+  transition: .3s;
+}
+.product .item-img .img-container img{
+  transition: 1s;
+}
+.product .item-img .img-container a:hover{
+  color: var(--mainBlack);
+}
+.product .item-img .img-container:hover img{
+  opacity: .5;
+}
+.product .item-img .img-container:hover a{
+  opacity: 1;
+}
+.product .per a:hover{
+color: var(--mainGrey);
+text-decoration: none;
+}
+/* smart */
+.smart{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../img/home-filler.jpeg") center/cover fixed no-repeat;
+}
+.smart a:hover{
+color: var(--mainGrey);
+text-decoration: none;
+}
+/* feat */
+.feat .img-container{
+  position: relative;
+  background: var(--TransGrey);
+  overflow: hidden;
+}
+
+.feat .img-container i{
+  padding: 10px;
+  background-color: var(--mainWhite);
+}
+.feat .img-container a:first-of-type{
+  position: absolute;
+  bottom: 65px;
+  right: 0;
+  transform: translateX(110%);
+  transition: .5s;
+}
+.feat .img-container a:last-of-type{
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  transform: translateX(110%);
+  transition: .5s;
+}
+.feat .img-container:hover a{
+transform: translateX(0%);
+}
+/* footer */
+.footer{
+  background: rgba(0, 0, 0, 0.8);
+}
+.footer h1{
+  border: 3px solid var(--mainYellow);
+  width: fit-content;
+  margin: auto;
+}
+.footer .pack a{
+  color: var(--mainYellow);
+}
+.footer .pack a:hover{
+color: var(--mainWhite);
+}
+.cat .item-category .tin span{
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+/* cat right part */
+.cat .img-container{
+  position: relative;
+  background: var(--TransGrey);
+  overflow: hidden;
+}
+
+.cat .img-container i{
+  padding: 10px;
+  background-color: var(--mainWhite);
+}
+.cat .img-container a:first-of-type{
+  position: absolute;
+  bottom: 65px;
+  right: 0;
+  transform: translateX(110%);
+  transition: .5s;
+}
+.cat .img-container a:last-of-type{
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  transform: translateX(110%);
+  transition: .5s;
+}
+.cat .img-container:hover a{
+transform: translateX(0%);
+}
+/* single product page colors spans */
+.single .colors span{
+  width: 1rem;
+  height: 1rem;
+}
+.mysingle{
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 1.2rem;
+  color: var(--mainBlack);
+  border: .1rem solid var(--mainBlack);
+  text-transform: capitalize;
+  transition: .3s;
+}
+.mysingle:hover{
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  text-decoration: none;
+}
+.single .item-img .many div:hover{
+  border: 2px solid var(--mainYellow);
+}
+.single .item-img .many img{
+  opacity: .5;
+}
+.single .item-img .many div:hover img{
+  opacity: 1;
+}
+/* store */
+.mystore{
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 1.2rem;
+  color: var(--mainBlack);
+  border: .1rem solid var(--mainBlack);
+  text-transform: capitalize;
+  transition: .3s;
+}
+.mystore:hover{
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  text-decoration: none;
+}
+@media(min-width:767px) and (max-width:992px){
+  .mystore{
+    font-size: .8rem;
+    padding: 2px 6px;
+  }
+}
+/* single product description
+
+links hover
+
+*/
+.des .item-link-des{
+  color: var(--mainGrey);
+}
+.des .item-link-des:hover{
+text-decoration: none;
+color: var(--mainYellow);
+}
