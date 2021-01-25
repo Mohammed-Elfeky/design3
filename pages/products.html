@@ -21,6 +21,12 @@
   </head>
 
   <body>
+    <div id="basket-counter-container">
+      <div id="basket-counter">
+        <i class="fa fa-shopping-basket " aria-hidden="true"></i>
+        <div id="counter">5</div>
+      </div>
+    </div>
 
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,10 +45,7 @@
           <a class="nav-item nav-link twofivesix px-3" href="store.html">Store</a>
         </div>
       </div>
-      <div class="pack d-none d-lg-flex">
-        <i class="fas fa-search twofivesix mr-2"></i>
-        <a href=""><span><i class="fas fa-shopping-cart twofivesix mainblack"></i></span></a>
-      </div>
+      
       </div>
     </nav>
     <!-- end nav -->
@@ -68,29 +71,7 @@
             </div>
             <!-- end links -->
 
-            <!-- title -->
-            <h6 class="text-uppercase">SHOP BY PRICE</h6>
-            <div class="bar mb-3"></div>
-            <!-- end title -->
-
-            <!-- form -->
-            <div class="form-group">
-              <!-- label -->
-              <label for="price-range" class="mb-3">range : $0 - $1000</label>
-              <!-- range -->
-              <input type="range" name="price-range" class="form-control-range" id="price-range">
-              <!-- search -->
-              <div class="input-group mt-4">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1">
-                    <a href=""><i class="fa fa-search mainblack"></i></a>
-                  </span>
-                </div> 
-                <input type="text" class="form-control text-capitalize" placeholder="search by" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-             
-            </div>
-            <!-- end form -->
+            
 
             <!-- title -->
             <h6 class="text-uppercase mt-4">SHOP BY COLOR</h6>
@@ -130,73 +111,73 @@
           <!-- end left -->
 
           <!-- right -->
-          <div class="col-lg-9 col-md-7 item-products">
+          <div class="col-lg-9 col-md-7 feat">
             <div class="row">
 
               <div class="col-md-6 col-lg-4 item text-center mb-2">
                 <div class="img-container p-5">
                   <img src="../img/img-products/product-1.png" class="img-fluid" alt="">
                   <a href=""><i class="fas fa-search mainblack"></i></a>
-                  <a href="" class="mi">add to card</a>
+                  <span id="1" data-price="100" data-title="brown-chair" data-photo="../img/img-products/product-1.png" href="" class="mi add">add to card</span>
                 </div>
                 <h6 class="text-capitalize">special product</h6>
-                <span class="old-price text-muted">$200</span>
+                <span class="old-price text-muted">$1000</span>
                 <span>100$</span>
               </div>
-
+    
               <div class="col-md-6 col-lg-4 item text-center mb-2">
                 <div class="img-container p-5">
                   <img src="../img/img-products/product-2.png" class="img-fluid" alt="">
                   <a href=""><i class="fas fa-search mainblack"></i></a>
-                  <a href="" class="mi">add to card</a>
+                  <span id="2" data-price="200" data-title="brown-chair" data-photo="../img/img-products/product-2.png" href="" class="mi add">add to card</span>
                 </div>
                 <h6 class="text-capitalize">special product</h6>
-                <span class="old-price text-muted">$200</span>
-                <span>100$</span>
+                <span class="old-price text-muted">$1000</span>
+                <span>200$</span>
               </div>
-
+    
               <div class="col-md-6 col-lg-4 item text-center mb-2">
                 <div class="img-container p-5">
                   <img src="../img/img-products/product-3.png" class="img-fluid" alt="">
                   <a href=""><i class="fas fa-search mainblack"></i></a>
-                  <a href="" class="mi">add to card</a>
+                  <span id="3" data-price="300" data-title="brown-chair" data-photo="../img/img-products/product-3.png" href="" class="mi add">add to card</span>
                 </div>
                 <h6 class="text-capitalize">special product</h6>
-                <span class="old-price text-muted">$200</span>
-                <span>100$</span>
+                <span class="old-price text-muted">$1000</span>
+                <span>300$</span>
               </div>
-
+    
               <div class="col-md-6 col-lg-4 item text-center mb-2">
                 <div class="img-container p-5">
                   <img src="../img/img-products/product-4.png" class="img-fluid" alt="">
                   <a href=""><i class="fas fa-search mainblack"></i></a>
-                  <a href="" class="mi">add to card</a>
+                  <span id="4" data-price="400" data-title="brown-chair" data-photo="../img/img-products/product-4.png" href="" class="mi add">add to card</span>
                 </div>
                 <h6 class="text-capitalize">special product</h6>
-                <span class="old-price text-muted">$200</span>
-                <span>100$</span>
+                <span class="old-price text-muted">$1000</span>
+                <span>400$</span>
               </div>
-
+    
               <div class="col-md-6 col-lg-4 item text-center mb-2">
                 <div class="img-container p-5">
                   <img src="../img/img-products/product-5.png" class="img-fluid" alt="">
                   <a href=""><i class="fas fa-search mainblack"></i></a>
-                  <a href="" class="mi">add to card</a>
+                  <span id="5" data-price="500" data-title="brown-chair" data-photo="../img/img-products/product-5.png" href="" class="mi add">add to card</span>
                 </div>
                 <h6 class="text-capitalize">special product</h6>
-                <span class="old-price text-muted">$200</span>
-                <span>100$</span>
+                <span class="old-price text-muted">$1000</span>
+                <span>500$</span>
               </div>
-
+    
               <div class="col-md-6 col-lg-4 item text-center mb-2">
                 <div class="img-container p-5">
                   <img src="../img/img-products/product-6.png" class="img-fluid" alt="">
                   <a href=""><i class="fas fa-search mainblack"></i></a>
-                  <a href="" class="mi">add to card</a>
+                  <span id="6" data-price="600" data-title="brown-chair" data-photo="../img/img-products/product-6.png" href="" class="mi add">add to card</span>
                 </div>
                 <h6 class="text-capitalize">special product</h6>
-                <span class="old-price text-muted">$200</span>
-                <span>100$</span>
+                <span class="old-price text-muted">$1000</span>
+                <span>600$</span>
               </div>
 
 
@@ -222,66 +203,66 @@
             <div class="img-container p-5">
               <img src="../img/img-products/product-7.png" class="img-fluid" alt="">
               <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
+              <span id="7" data-price="2000" data-title="brown-chair" data-photo="../img/img-products/product-7.png" href="" class="mi add">add to card</span>
             </div>
             <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
+            <span class="old-price text-muted">$5000</span>
+            <span>2000$</span>
           </div>
 
           <div class="col-md-6 col-lg-4 item text-center mb-2">
             <div class="img-container p-5">
               <img src="../img/img-products/product-8.png" class="img-fluid" alt="">
               <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
+              <span id="8" data-price="550" data-title="brown-chair" data-photo="../img/img-products/product-8.png" href="" class="mi add">add to card</span>
             </div>
             <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
+            <span class="old-price text-muted">$1000</span>
+            <span>550$</span>
           </div>
 
           <div class="col-md-6 col-lg-4 item text-center mb-2">
             <div class="img-container p-5">
               <img src="../img/img-products/product-9.png" class="img-fluid" alt="">
               <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
+              <span id="9" data-price="800" data-title="brown-chair" data-photo="../img/img-products/product-9.png" href="" class="mi add">add to card</span>
             </div>
             <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
+            <span class="old-price text-muted">$1000</span>
+            <span>800$</span>
           </div>
 
           <div class="col-md-6 col-lg-4 item text-center mb-2">
             <div class="img-container p-5">
               <img src="../img/img-products/product-10.png" class="img-fluid" alt="">
               <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
+              <span id="10" data-price="700" data-title="brown-chair" data-photo="../img/img-products/product-10.png" href="" class="mi add">add to card</span>
             </div>
             <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
+            <span class="old-price text-muted">$1000</span>
+            <span>700$</span>
           </div>
 
           <div class="col-md-6 col-lg-4 item text-center mb-2">
             <div class="img-container p-5">
               <img src="../img/img-products/product-11.png" class="img-fluid" alt="">
               <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
+              <span id="11" data-price="2000" data-title="brown-chair" data-photo="../img/img-products/product-11.png" href="" class="mi add">add to card</span>
             </div>
             <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
+            <span class="old-price text-muted">$2000</span>
+            <span>1500$</span>
           </div>
 
           <div class="col-md-6 col-lg-4 item text-center mb-2">
             <div class="img-container p-5">
               <img src="../img/img-products/product-12.png" class="img-fluid" alt="">
               <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
+              <span id="12" data-price="2000" data-title="brown-chair" data-photo="../img/img-products/product-12.png" href="" class="mi add">add to card</span>
             </div>
             <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
+            <span class="old-price text-muted">$5000</span>
+            <span>2000$</span>
           </div>
 
 

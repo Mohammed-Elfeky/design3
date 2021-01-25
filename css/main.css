@@ -188,23 +188,27 @@ text-decoration: none;
   padding: 10px;
   background-color: var(--mainWhite);
 }
-.feat .img-container a:first-of-type{
+.feat .img-container a{
   position: absolute;
   bottom: 65px;
   right: 0;
   transform: translateX(110%);
   transition: .5s;
 }
-.feat .img-container a:last-of-type{
+.feat .img-container span{
   position: absolute;
   right: 0;
   bottom: 20px;
   transform: translateX(110%);
   transition: .5s;
+  cursor: pointer;
 }
-.feat .img-container:hover a{
+.feat .img-container:hover span{
 transform: translateX(0%);
 }
+.feat .img-container:hover a{
+  transform: translateX(0%);
+  }
 /* footer */
 .footer{
   background: rgba(0, 0, 0, 0.8);
@@ -225,34 +229,7 @@ color: var(--mainWhite);
   height: 16px;
   display: inline-block;
 }
-/* cat right part */
-.cat .img-container{
-  position: relative;
-  background: var(--TransGrey);
-  overflow: hidden;
-}
 
-.cat .img-container i{
-  padding: 10px;
-  background-color: var(--mainWhite);
-}
-.cat .img-container a:first-of-type{
-  position: absolute;
-  bottom: 65px;
-  right: 0;
-  transform: translateX(110%);
-  transition: .5s;
-}
-.cat .img-container a:last-of-type{
-  position: absolute;
-  right: 0;
-  bottom: 20px;
-  transform: translateX(110%);
-  transition: .5s;
-}
-.cat .img-container:hover a{
-transform: translateX(0%);
-}
 /* single product page colors spans */
 .single .colors span{
   width: 1rem;
@@ -290,10 +267,11 @@ transform: translateX(0%);
   border: .1rem solid var(--mainBlack);
   text-transform: capitalize;
   transition: .3s;
+  cursor: pointer;
 }
 .mystore:hover{
   background-color: var(--mainBlack);
-  color: var(--mainWhite);
+  color: var(--mainYellow);
   text-decoration: none;
 }
 @media(min-width:767px) and (max-width:992px){
@@ -313,4 +291,35 @@ links hover
 .des .item-link-des:hover{
 text-decoration: none;
 color: var(--mainYellow);
+}
+#basket-counter-container{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 45px;
+  height: 45px;
+  z-index: 10;
+}
+#basket-counter{
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fdbe02;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#counter{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color:#071013;
+  right: 0;
+  top: 0;
+  color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

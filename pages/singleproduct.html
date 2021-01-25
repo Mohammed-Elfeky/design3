@@ -21,11 +21,17 @@
   </head>
 
   <body>
+    <div id="basket-counter-container">
+      <div id="basket-counter">
+        <i class="fa fa-shopping-basket " aria-hidden="true"></i>
+        <div id="counter">5</div>
+      </div>
+    </div>
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="img/logo.png" alt="">
+          <img src="../img/logo.png" alt="">
         </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,10 +44,7 @@
           <a class="nav-item nav-link twofivesix px-3" href="store.html">Store</a>
         </div>
       </div>
-      <div class="pack d-none d-lg-flex">
-        <i class="fas fa-search twofivesix mr-2"></i>
-        <a href=""><span><i class="fas fa-shopping-cart twofivesix mainblack"></i></span></a>
-      </div>
+      
       </div>
     </nav>
     <!-- end nav -->
@@ -151,11 +154,7 @@
 
           <!-- buttons -->
           <div class="bts d-flex flex-wrap">
-            <a href="" class="mb-2 mr-2 mysingle text-decoration-none">-</a>
-            <a href="" class="mb-2 mr-2 mysingle text-decoration-none">4</a>
-            <a href="" class="mb-2 mr-2 mysingle text-decoration-none">+</a>
-            <a href="" class="mb-2 mr-2 mysingle text-decoration-none">wishlist</a>
-            <a href="" class="my mb-2 mr-2 text-decoration-none">add to card</a>
+            <span id="1" data-price="100" data-title="brown-chair" data-photo="../img/img-products/product-1.png" href="" class="mi add">add to card</span>
           </div>
           <!-- end buttons -->
 
@@ -217,87 +216,8 @@
       </div>
     </div>
     <!-- end smart -->
-    <!-- feat -->
-    <div class="feat text-center py-5">
-      <div class="container">
-        <h1>FEATURED PRODUCTS</h1>
-        <p class="text-muted">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          recusandae.
-        </p>
-        <div class="row">
-
-          <div class="col-md-6 col-lg-4 item text-center mb-2">
-            <div class="img-container p-5">
-              <img src="../img/img-products/product-1.png" class="img-fluid" alt="">
-              <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
-            </div>
-            <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
-          </div>
-
-          <div class="col-md-6 col-lg-4 item text-center mb-2">
-            <div class="img-container p-5">
-              <img src="../img/img-products/product-2.png" class="img-fluid" alt="">
-              <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
-            </div>
-            <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
-          </div>
-
-          <div class="col-md-6 col-lg-4 item text-center mb-2">
-            <div class="img-container p-5">
-              <img src="../img/img-products/product-3.png" class="img-fluid" alt="">
-              <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
-            </div>
-            <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
-          </div>
-
-          <div class="col-md-6 col-lg-4 item text-center mb-2">
-            <div class="img-container p-5">
-              <img src="../img/img-products/product-4.png" class="img-fluid" alt="">
-              <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
-            </div>
-            <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
-          </div>
-
-          <div class="col-md-6 col-lg-4 item text-center mb-2">
-            <div class="img-container p-5">
-              <img src="../img/img-products/product-5.png" class="img-fluid" alt="">
-              <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
-            </div>
-            <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
-          </div>
-
-          <div class="col-md-6 col-lg-4 item text-center mb-2">
-            <div class="img-container p-5">
-              <img src="../img/img-products/product-6.png" class="img-fluid" alt="">
-              <a href=""><i class="fas fa-search mainblack"></i></a>
-              <a href="" class="mi">add to card</a>
-            </div>
-            <h6 class="text-capitalize">special product</h6>
-            <span class="old-price text-muted">$200</span>
-            <span>100$</span>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-    <!-- end feat -->
+    
+    
     <!-- new -->
     <div class="new text-center py-5">
       <div class="container">
